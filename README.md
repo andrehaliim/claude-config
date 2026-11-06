@@ -1,13 +1,16 @@
 # claude-config
 
-Personal Claude Code rules, shared across PCs.
+Personal Claude Code rules and skills, shared across PCs.
 
 | File | Applies to |
 |---|---|
 | `rules/general.md` | All projects: language, plan before changes, code review, commit message, git |
 | `rules/flutter.md` | Flutter/Dart projects only (those with a `pubspec.yaml`) |
+| `skills/store-screenshots/` | `/store-screenshots`: framed Play Store / App Store screenshots and a store banner |
 
 Claude Code loads every `.md` file in `~/.claude/rules/` in every session, so `~/.claude/rules` is a junction to this repo's `rules/` folder.
+
+Skills are linked one by one: each folder in `skills/` gets a junction at `~/.claude/skills/<name>`. `~/.claude/skills` itself stays a normal folder, so skills installed from elsewhere keep working. To add a skill, put its folder in `skills/` and run `setup.ps1` again.
 
 ## Install on a new PC (Windows)
 
@@ -16,7 +19,7 @@ git clone https://github.com/andrehaliim/claude-config.git C:\Work\claude-config
 powershell -ExecutionPolicy Bypass -File C:\Work\claude-config\setup.ps1
 ```
 
-Then restart Claude. The script backs up any existing `~/.claude/rules` and `~/.claude/CLAUDE.md` (as `*.bak-<timestamp>`) and creates the junction. No admin rights needed.
+Then restart Claude. The script backs up any existing `~/.claude/rules` and `~/.claude/CLAUDE.md` (as `*.bak-<timestamp>`) and creates the junctions. An existing copy of a skill is moved to `~/.claude/skills-backup/<name>.bak-<timestamp>`, outside `~/.claude/skills` so it is not loaded twice. No admin rights needed.
 
 ## Update
 

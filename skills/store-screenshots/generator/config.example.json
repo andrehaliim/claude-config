@@ -1,0 +1,66 @@
+{
+  "locales": ["en", "id"],
+  "source_width": 1080,
+  "crop_top": 100,
+  "vars": {
+    "app_name": "My App",
+    "tagline_1": {
+      "en": "Short promise,",
+      "id": "Janji singkat,"
+    },
+    "tagline_2": {
+      "en": "key benefit.",
+      "id": "manfaat utama."
+    },
+    "tagline_sub": {
+      "en": "One sentence on what the app does and who it is for.",
+      "id": "Satu kalimat tentang fungsi app dan untuk siapa."
+    }
+  },
+  "images": {
+    "icon": "../assets/icon/app_icon.png"
+  },
+  "fonts": [
+    { "family": "Manrope", "weight": 700, "file": "../assets/fonts/Manrope-Bold.ttf" },
+    { "family": "Manrope", "weight": 500, "file": "../assets/fonts/Manrope-Medium.ttf" },
+    { "family": "NotoSerif", "weight": 600, "style": "italic", "file": "../assets/fonts/NotoSerif-SemiBoldItalic.ttf" }
+  ],
+  "theme": {
+    "font-body": "Manrope, sans-serif",
+    "font-brand": "NotoSerif, serif",
+    "brand-style": "italic",
+    "brand-weight": "600",
+    "bg-start": "#00594B",
+    "bg-mid": "#004D40",
+    "bg-end": "#00332B",
+    "accent": "#C5A059",
+    "blob-1": "rgba(255, 255, 255, 0.06)",
+    "blob-2": "rgba(197, 160, 89, 0.10)",
+    "glow-1": "rgba(197, 160, 89, 0.28)",
+    "glow-2": "rgba(0, 117, 106, 0.55)",
+    "banner-glow-1": "rgba(197, 160, 89, 0.30)",
+    "title": "#FFFFFF",
+    "subtitle": "#E6D5B8",
+    "device": "#0B0F0E",
+    "device-edge": "#2A3A36",
+    "icon-ring": "rgba(197, 160, 89, 0.5)",
+    "wallpaper-glow": "rgba(230, 213, 184, 0.9)",
+    "wallpaper-start": "#CFE3DD",
+    "wallpaper-end": "#9CC7BB"
+  },
+  "banner": {
+    "shots": ["02_detail", "01_home"]
+  },
+  "captions": {
+    "01_home": {
+      "en": ["Short benefit title", "One line that explains what the screen does"],
+      "id": ["Judul manfaat singkat", "Satu baris yang menjelaskan layar ini"]
+    },
+    "06_widget": {
+      "layout": "widget",
+      "crop": [190, 1850],
+      "en": ["Widgets at a glance", "On your home screen"],
+      "id": ["Widget sekilas pandang", "Langsung di layar utama"]
+    }
+  }
+}
